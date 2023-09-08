@@ -11,6 +11,8 @@ function addButton() {
         const btn = document.createElement('button');
         btn.innerHTML = 'x';
         li.appendChild(btn);
+        li.classList.add('element')
+
     }
     choreInput.value = "";
     saveData();

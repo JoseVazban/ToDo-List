@@ -12,7 +12,6 @@ function addButton() {
         btn.innerHTML = 'x';
         li.appendChild(btn);
         li.classList.add('element')
-
     }
     choreInput.value = "";
     saveData();

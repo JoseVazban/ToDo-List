@@ -1,6 +1,5 @@
 * {
     background-color: #c6def1;
-    
 }
 #todo {
     display: flex;
@@ -10,6 +9,13 @@
 
 input#chore{
     margin-top: 40px;
+    border-color:#f7f8f8;
+}
+
+button {
+    background-color: #f2c6de;
+    color:black;
+    border-radius: 5px;
 }
 
 #entrtxt {
@@ -24,21 +30,22 @@ ul li {
     text-align: left;
 }
 
-ul li button {
-    background-color: red;
-    display:flexbox;
+button.borrar {
+    float: right;
+    background-color: #f2c6de;
+    color: aliceblue;
+    border: 0;
+    border-radius: 8px;
+    padding: 3px 15px 3px 15px ;
 }
 
 ul#list1 {
-    padding: 0 0 0 0;   
+    padding: 0px 0px 0px 0px;   
 }
 
 .element{
-    border-style:groove;
-    display: block;
+    border: 0;
     background-color: #faedcb;
-    min-height: 0px;
     list-style-type: none;
-    box-sizing: border-box;
     padding: 10px;
 } 

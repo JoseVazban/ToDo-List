@@ -1,17 +1,18 @@
-let chores = []
 const choreInput = document.getElementById('chore');
 const choreList = document.getElementById("list1");
 
 function addButton() {
-    const choreText = choreInput.value.trim();
-    if (choreText.value != '') {
+    if (choreInput.value != '') {
         const li = document.createElement('li');
         li.innerHTML = choreInput.value;
         choreList.appendChild(li);
         const btn = document.createElement('button');
         btn.innerHTML = 'x';
+        btn.classList.add('borrar');
         li.appendChild(btn);
         li.classList.add('element')
+    } else {
+        alert ("Escribe algo por favor.");
     }
     choreInput.value = "";
     saveData();

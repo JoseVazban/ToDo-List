@@ -2,7 +2,7 @@
     background-color: #c6def1;
 }
 #todo {
-    display: flex;
+    display: grid;
     justify-content: center;
     text-align: center;
 }
@@ -26,8 +26,10 @@ button {
     min-height: 100px;
 }
 
-ul li {
+li.element {
     text-align: left;
+    padding: 10px;
+    white-space: pre-wrap;
 }
 
 button.borrar {

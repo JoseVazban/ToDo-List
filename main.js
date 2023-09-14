@@ -40,3 +40,15 @@ function showTask() {
     
     choreList.innerHTML = localStorage.getItem('data')
 } showTask()
+
+function initialize() {
+    const deleteButtons = document.querySelectorAll('.borrar');
+    deleteButtons.forEach(function(btn) {
+        btn.addEventListener('click', function (e) {
+            e.target.parentElement.remove();
+            saveData();
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initialize);

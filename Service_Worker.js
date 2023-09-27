@@ -1,8 +1,9 @@
-//asignar un nombre y versión al cache
 const CACHE_NAME = 'xamplepwa',
     urlsToCache = [
         '.',
         './index.html',
+        './main.js',
+        './style.css',
     ]
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {

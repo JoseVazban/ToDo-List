@@ -19,18 +19,27 @@ function addButton() {
         saveData();
 
         btn.addEventListener('click', function (e) {
-        e.target.parentElement.remove();
-        saveData();
-    });
+             e.target.parentElement.remove();
+            if (navigator.onLine) {
+                saveDataToServer();
+            } else {
+            saveDataLocally();
+            }
+        });
         
     } else {
         alert('Escribe algo por favor.');
         return;
     }
-
 }
 
-function saveData(){
+function saveDataToServer(){
+
+    setItem('data', choreList.innerHTML)
+    
+}
+
+function saveDataLocally(){
 
     localStorage.setItem('data', choreList.innerHTML)
     
